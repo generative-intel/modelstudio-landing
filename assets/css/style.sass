@@ -1,0 +1,50 @@
+@import resets/normalize
+@import resets/reset
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap')
+
+//MEDIA QUERIES
+$mobile: 640px
+$tablet: 1190px
+$desktop: 1441px
+
+//////////////// LIBRARY ////////////////
+
+//COLORS
+$white: #ffffff
+$bg-dark: #ededed
+$bg-light: #f7f7f7
+$border-dark: #b4b4b4
+$border-light: #dddddd
+$text: #393939
+$primary: #052847
+$secondary: #00BEB4
+
+//FONTS
+h1
+    font-size: 4rem
+    line-height: 1em
+    font-weight: 600
+
+//////////////// STYLES ////////////////
+
+html
+    font-size: 62.5%
+
+    @media (max-width: $mobile)
+        font-size: 45%
+
+body
+    font-family: 'Outfit'
+    font-size: 1.6rem
+    line-height: 1.2em
+    font-weight: 400
+    color: $text
+    background: url('/assets/img/pattern.svg') no-repeat center center $primary 
+    background-size: cover
+
+.container
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
